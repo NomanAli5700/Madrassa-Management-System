@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RegistrationForm_v7 by Colorlib</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+
+
+
+.form-box{
+  
+max-width:  758px;
+margin: auto;
+background: #fbfbfc;
+border: 1px solid #2b62f8;
+}
+.header{
+   
+   padding: 0.5px;
+    align-content: center;
+    
+}
+h1{
+    
+    align-items: center;
+    margin-left: 5px;
+    color: #2b62f8;
+}
+.form{
+    padding: 20px 40px;
+}
+
+.input-field{
+width: 100%;
+padding: 10px 0;
+margin: 5px 0;
+border-left: 0;
+border-top: 0;
+border-right: 0;
+border-bottom: 1px solid #999;
+outline: none;
+background: transparent;
+
+}
+
+#email{
+ left:50px;
+}
+
+
+.section{
+    display: block;
+	margin-bottom: 20px;
+  
+    color: #070506;
+}
+.section input[type=text] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom:2px solid #d8d1d1;
+}
+.section input[type=radio]{
+   
+   margin-bottom: 0px;
+   color: #070506;
+}
+
+.section.success select{
+    border-bottom:2px solid rgb(26, 167, 26);
+}
+
+.section.error select{
+    border-bottom:2px solid rgb(228, 29, 22);
+}
+.section.success input{
+    border-bottom:2px solid rgb(26, 167, 26);
+}
+
+.section.error input{
+    border-bottom:2px solid rgb(228, 29, 22);
+}
+.section small{
+    margin: 5px;
+    visibility: hidden;
+    position: relative;
+     color: red;
+}
+
+
+.section button{
+  
+    margin-left: 20px;
+    display: inline;
+    background: linear-gradient(to right,#7810ff,#06eeff);
+    color:#070606;
+    padding: 10px 20px;
+    width: 30%;
+    border: 0;
+  outline: none;
+   border-radius:30px ;
+    cursor: pointer;
+}
+
+
+.section button:hover{
+    background-color: #230257;
+    color: white;
+}
+
+  
+
+
+        </style>
+	</head>
+
+	<body>
+       
+      
+            <div class="form-box">
+                <div class="header">
+                    <h1>Madrassa  Application  Form</h1>
+                </div>
+             
+           
+                
+            <form  id="form" class="form">
+                
+                <div class="section">
+                    <h3 ><b>&nbsp;Details &nbsp; of &nbsp;  Applicant</b></h3>
+                </div>
+                    <div class="section">
+                    
+                    <input id="txtfullName" class="input-field" type="text" name="fullname" placeholder=" Full Name" />
+                   
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                    
+                    <input id="fName" type="text" class="input-field" name="fName"  placeholder=" FatherName"/>
+                   
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                    
+                    <input id="age" type="text"  class="input-field" name="age" placeholder=" Age"/>
+                   
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                   
+                    <input id="dob" type="text" name="dob" class="input-field" placeholder=" Date of Birth" />
+                   
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                    
+                    <input id="mob" type="text" name="mob" class="input-field"  placeholder=" Mobile Number" />
+                  
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                    
+                    <input id="hometel" type="text" name="hometel"  class="input-field"  placeholder=" Home contect Number"/>
+                   
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                   
+                    <input id="gname" type="text" name="gname"  class="input-field" placeholder=" Father or Gaurdian Name"/>
+                  
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                    
+                    <input id="gjob" type="text" name="gjob"  class="input-field"  placeholder=" Father or Gaurdian Job"/>
+                    
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                   
+                    <input id="adr" type="text" name="adr" class="input-field"  placeholder=" Address"/>
+                   
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                   
+                    <input id="em_num" type="text" name="em_num" class="input-field"  placeholder=" Emergency contect Number"/>
+                    
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                  
+                    <input id="acnic" type="text" name="acnic" class="input-field" placeholder=" Applicant CNIC (i.e.3420146784303)"/>
+                    
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                    
+                    
+                    <input id="gcnic" type="text" name="gcnic" class="input-field" placeholder=" Father or Gaurdian CNIC (i.e.3420146784303)"/>
+                   
+                    <small>Error Message</small>
+                </div>
+               
+                <div class="section">
+                    
+                    <input id="date" type="date" name="date" class="input-field"  placeholder=" Current Date "/>
+                   
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                   
+                    <input id="city" type="text" name="city" class="input-field"  placeholder=" City Name"/>
+                   
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                  
+                    <input id="predu" type="text" name="predu" class="input-field"  placeholder=" Previous Degree"/>
+                    
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                  
+                    <input id="MO" type="text" name="MO"  class="input-field" placeholder=" Marks obtained in previous Degree" />
+                    
+                    <small>Error Message</small>
+                </div>
+                <div class="section">
+                   
+                    <input id="preMd" type="text" name="preMd" class="input-field"  placeholder=" Maddrassa Attended Priviously"/>
+                    
+                    <small>Error Message</small>
+                </div>
+                
+                <div class="section">
+                    
+                   
+                    <select name="courses" id="courses" class="input-field" >
+                       
+                        <option >select course</option>
+                    <option >Alimiyyah Fazila Program</option>
+                    <option >Alimiyyah Program</option>
+                    <option >Hifz ul Quran and Nazra Program</option>
+                    <option >Tafseer Course Program</option>
+                    <option > Dars-e-Nazami Program</option>
+                    <option >Fiqh Program</option>
+                    <option >Hajj and Umrah Program</option>
+                    <option >Arabic Grammar Program</option>
+                   
+                    
+                  </select>
+                  
+                  
+                   <small>Error Message</small>
+                 
+                </div>
+                <div class="section" >
+                    
+                   
+                    <select name="session" id="session"class="input-field"  >
+                        <option >choose session</option>
+                    <option >Morning</option>
+                    <option >Evening</option>
+                    
+                  </select>
+                  
+                  
+                   <small>Error Message</small>
+                 
+                </div>
+   
+                <div class="section"> 
+       
+        
+                    Gender<br><br>
+                    
+                   
+                    <input type="radio" id="male" value="male" name="gender"> Male<br>
+                   
+               
+                    <input type="radio" id="female" value="female" name="gender"> Female<br>
+                
+                    <small >Error message</small>
+                 
+                </div>
+
+                <div class="section">
+                    <button type="submit" value="submit" id="btn1" >Register</button>
+                    <button type="button"  id="btn2">logout</button>
+                </div>
+                   
+
+            </form>
+            </div>
+
+
+
+           
+            
+            <script type="module">
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+  import { getDatabase,set,ref,update } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+  import { getAuth, onAuthStateChanged ,signOut} from  "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBAokw9mv-ATmAwLYy8WLmWs0LjIl74rNc",
+    authDomain: "login-96882.firebaseapp.com",
+    databaseURL: "https://login-96882-default-rtdb.firebaseio.com",
+    projectId: "login-96882",
+    storageBucket: "login-96882.appspot.com",
+    messagingSenderId: "977929726215",
+    appId: "1:977929726215:web:94f068b5eec7de47d2fda2",
+    measurementId: "G-GYJG3P0YGJ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+   const db = getDatabase(app);
+   const auth = getAuth();
+
+
+
+
+  
+
+
+
+   let signoutbtn=document.getElementById("btn2").addEventListener('click',(event)=>{
+                     signOut(auth)
+                 .then(() => {
+                
+                 
+               
+                // Sign-out successful.
+               
+                alert('user loged out');
+               
+            
+   
+                 location.href='admission.html';
+                
+               
+            }).catch((error) => {
+                // An error happened.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+
+                    alert(errorMessage);
+            });
+ 
+   })
+           
+               
+                
+           
+
+          
+
+
+
+       
+
+        document.querySelector("button")
+       .addEventListener("click",(event)=>{
+        event.preventDefault();
+         validateform();
+         
+        if(isFormValid()==true){
+            InsertData();
+        }else{
+            return false;
+        }
+
+    });
+
+      function validateform(){
+
+                    
+        const    FullName=document.getElementById("txtfullName");
+        const    FName=document.getElementById("fName");
+        const    Dob=document.getElementById("dob");
+        const    Age=document.getElementById("age");
+        const    Mob=document.getElementById("mob");
+        const    Hometel=document.getElementById("hometel");
+        const    GName=document.getElementById("gname");
+        const    GJob=document.getElementById("gjob");
+        const    Adr=document.getElementById("adr");
+        const    Em_num=document.getElementById("em_num");
+        const    Gcnic=document.getElementById("gcnic");
+        const    Acnic=document.getElementById("acnic");
+        const    Predu=document.getElementById("predu");
+        const    PreMO=document.getElementById("MO");
+        const    Date=document.getElementById("date");
+        const    City=document.getElementById("city");
+        const    PMA=document.getElementById("preMd");
+        const    Courses=document.getElementById("courses");
+        const    Session=document.getElementById("session");
+        const    radio1=document.getElementById("male");
+        const    radio2=document.getElementById("female");
+
+        
+        //check username is empty 
+        if(FullName.value.trim()=="")
+        {
+           onError(FullName," Fill-Up the filed");
+        }
+        else
+        {
+            onSuccess(FullName);
+        }
+        if(FName.value.trim()=="")
+        {
+           onError(FName," Fill-Up the filed");
+        }
+        else
+        {
+            onSuccess(FName);   
+        }
+        if(Age.value.trim()=="")
+        {
+           onError(Age," Fill-Up the filed");
+        }
+        else
+        {
+            onSuccess(Age);
+            
+        }
+        if(Dob.value.trim()=="")
+        {
+           onError(Dob," Fill-Up the filed");
+        }
+        else
+        {
+            onSuccess(Dob);
+            
+        }
+        if(Mob.value.trim()==="")
+        {
+            onError(Mob," Fill-Up the filed");
+        }
+        else
+        { onSuccess(Mob);}
+        if(Hometel.value.trim()==="")
+        {
+            onError(Hometel," Fill-Up the filed");
+        }
+        else
+        { onSuccess(Hometel);}
+    
+        if(GName.value.trim()=="")
+        {
+           onError(GName," Fill-Up the filed");
+        }
+        else
+        {
+           
+            onSuccess(GName);
+            
+        }
+    
+        if(GJob.value.trim()==="")
+        {
+            onError(GJob," Fill-Up the filed");
+        }
+        else
+        { onSuccess(GJob);}
+    
+        if(Adr.value.trim()==="")
+        {
+            onError(Adr," Fill-Up the filed");
+        }
+        else
+        { onSuccess(Adr);}
+    
+        if(Em_num.value.trim()==="")
+        {
+            onError(Em_num," Fill-Up the filed");
+        }
+        else
+        { onSuccess(Em_num);}
+        
+        if(Gcnic.value.trim()==="")
+        {
+            onError(Gcnic," Fill-Up the filed");
+        }
+        else
+        { onSuccess(Gcnic);}
+        if(Acnic.value.trim()==="")
+        {
+            onError(Acnic," Fill-Up the filed");
+        }
+        else
+        {
+           
+            onSuccess(Acnic);
+            
+        }
+    
+        if(Predu.value.trim()==="")
+        {
+            onError(Predu," Fill-Up the filed");
+        }
+        else
+        { onSuccess(Predu);}
+        
+        if(PreMO.value.trim()==="")
+        {
+            onError(PreMO," Fill-Up the filed");
+        }
+        else
+        { onSuccess(PreMO);}
+
+
+        if(Date.value.trim()==="")
+        {
+            onError(Date," Fill-Up the filed");
+        }
+        else
+        { onSuccess(Date);}
+
+
+        if(City.value.trim()==="")
+        {
+            onError(City," Fill-Up the filed");
+        }
+        else
+        { onSuccess(City);}
+
+        
+        if(PMA.value.trim()==="")
+        {
+            onError(PMA," Fill-Up the filed");
+        }
+        else
+        { onSuccess(PMA);}
+
+
+        if(Courses.value.trim()==="select course")
+        {
+            onError(Courses," Fill-Up the filed");
+        }
+        else
+        { onSuccess(Courses);}
+        if(Session.value.trim()==="choose session")
+        {
+            onError(Session," Fill-Up the filed");
+        }
+        else
+        { onSuccess(Session);}
+        if(radio1.checked==true){
+	        onSuccess(radio1);
+        }
+        else
+        {
+	    if(radio2.checked==true)
+        {
+	         onSuccess(radio2);
+	    }
+	    else
+        {
+		  onError(radio1,"Please Select One");
+        }
+        }
+
+    }
+        
+
+    
+    function isFormValid(){
+        const inputContainers=document.querySelectorAll('.section');
+       let result=true;
+       inputContainers.forEach((container)=>{
+       if(container.classList.contains('error')){
+         result=false;
+       }
+    });
+        return result;
+     }
+    
+
+
+        
+       
+        
+   
+
+     function InsertData(){
+
+        
+     var   userName=document.getElementById("txtfullName");
+     var   FaName=document.getElementById("fName");
+     var   userDob=document.getElementById("dob");
+     var   userAge=document.getElementById("age");
+     var    userMob=document.getElementById("mob");
+     var    userHometel=document.getElementById("hometel");
+     var    userGName=document.getElementById("gname");
+     var    userGJob=document.getElementById("gjob");
+     var    userAdr=document.getElementById("adr");
+     var    userEm_num=document.getElementById("em_num");
+     var    userGcnic=document.getElementById("gcnic");
+     var   userAcnic=document.getElementById("acnic");
+     var    userPredu=document.getElementById("predu");
+     var    userDate=document.getElementById("date");
+     var    userCity=document.getElementById("city");
+     var    userPreMd=document.getElementById("preMd");
+     var    userPreMO=document.getElementById("MO");
+     var    userCourses=document.getElementById("courses");
+     var    userSession=document.getElementById("session");
+     var     Gender=document.getElementById("male");
+     var    Gender=document.getElementById("female");
+
+
+
+    
+     const user = auth.currentUser;
+
+     onAuthStateChanged(auth, (user) => {
+     if (user) {
+
+                    update(ref(db,"students/"+user.uid),
+                        {
+                            NameofStd:userName.value,
+                            FatherName:FaName.value,
+                            DOB:userDob.value,
+                            Age:userAge.value,
+                            Mobile:userMob.value,
+                            Hometel: userHometel.value,
+                            GuardianName: userGName.value,
+                            GuardianJob: userGJob.value,
+                            Adress:  userAdr.value,
+                            Emergency_number:  userEm_num.value,
+                            GuardianCNIC:   userGcnic.value,
+                            ApplicantCNIC:   userAcnic.value,
+                            PreviousEducation:userPredu.value,
+                            Marks_obtained:userPreMO.value,
+                            Date:   userDate.value,
+                            City:   userCity.value,
+                            Previous_Madrassa_Attended:userPreMd.value,
+                            Courses: userCourses.value,
+                            Session: userSession.value,
+                            Gender: Gender.value
+                        
+                        }) 
+                    .then(()=> {
+                        alert("Record Submited Successfully");
+                        form.reset();
+                        
+                        
+                        })
+                        .catch((error) => {
+                         const errorCode = error.code;
+                         const errorMessage = error.message;
+                         alert(errorMessage);
+  });
+                       
+                               
+            } else {
+   
+         }
+})
+
+
+
+
+
+     
+         
+        }
+    
+    
+    function onSuccess(input){
+        let parent=input.parentElement;
+        let messageEle=parent.querySelector("small");
+        messageEle.style.visibility="hidden"; 
+        parent.classList.remove("error");
+        parent.classList.add("success");  
+    }
+    function onError(input,message){
+        let parent=input.parentElement;
+        let messageEle=parent.querySelector("small");
+        messageEle.style.visibility="visible";
+        messageEle.innerText=message;  
+        parent.classList.add("error");
+        parent.classList.remove("success");
+    
+    }
+   
+   
+            </script>
+    
+    
+    
+    
+            
+    </body>
+
+</html>
