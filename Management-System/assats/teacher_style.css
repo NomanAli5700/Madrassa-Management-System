@@ -1,0 +1,813 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+/*===== VARIABLES CSS =====*/
+#body-pd{
+  --header-height: 3rem;
+  --nav-width: 68px;
+
+  /*===== Colors =====*/
+  --first-color: #0a043c;
+  --first-color-light: #d9d1ee;
+  --white-color: #0a043c;
+  
+  /*===== Font and typography =====*/
+  --body-font: 'Times New Roman', sans-serif;
+  --normal-font-size: 1rem;
+  
+  /*===== z index =====*/
+  --z-fixed: 100;
+}
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+body{
+    
+    background-color: #fff;
+  position: relative;
+  margin: var(--header-height) 0 0 0;
+  padding: 0 1rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+}
+
+a{
+  text-decoration: none;
+} 
+
+.header{
+  width:100%;
+  height:var(--header-height);
+  position:fixed;
+  top:0;
+  left:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 1rem;
+  background-color:var(--white-color);
+  z-index: var(--z-fixed);
+  transition:.5s;
+}
+.header h1{
+    color: #fff;
+    font-size: 2rem;
+}
+.header__toggle{
+  color:var(--first-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.header__profile{
+    background-color: #fff;
+   border-radius: 5px;
+  width:100px;
+  height:50px;
+ display: flex;
+ cursor: pointer;
+}
+.header__profile img{
+    width: 60px;
+    border-radius: 100px;
+    
+}
+.header__profile .p{
+  width: auto;
+  height: 50px;
+  font-size: 1.2rem;
+ margin: 11px;
+  
+}
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*=========================Nav=================================================*/
+
+
+ 
+
+
+.l-navbar{
+    
+  position:fixed;
+  top:0;
+  left:-30%;
+  width:var(--nav-width);
+  height:100vh;
+  background:var(--first-color);
+  padding:.5rem 1rem 0 0;
+  transition:.5s;
+  z-index: var(--z-fixed);
+}
+.nav{
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  overflow:hidden;
+}
+.nav__logo,.nav__link{
+  
+  display:grid;
+  grid-template-columns: max-content max-content;
+  align-items:center;
+  column-gap: 1rem;
+  padding:.5rem 0 .5rem 1.5rem;
+}
+.nav__logo{
+  margin-bottom:2rem;
+}
+.nav__logo-icon{
+    color: #fff;
+  font-size: 1.25rem;
+  
+}
+.nav__logo-name{
+    color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  
+}
+.nav__link{
+    font-size: 1.2rem;
+  position:relative;
+  color:var(--first-color-light);
+  margin-bottom:1.5rem;
+  transition:.3s;
+}
+.nav__link:hover{
+  color:#fff;
+}
+
+.show{
+  left:0;
+}
+.body-pd{
+  padding-left:calc(var(--nav-width) + 1rem);
+}
+
+.active{
+  color:#020731;
+  background-color: white;
+  border-radius:20px;
+}
+.active::before{
+  content:'';
+  position:absolute;
+  left:0;
+  width:2px;
+  height:32px;
+  
+}
+h1{
+  padding:2rem 0 0;
+  margin-bottom: 50px;
+}
+p{
+  color:#333;
+  line-height: 1.6;
+}
+
+@media screen and (min-width:768px){
+  body{
+    margin:calc(var(--header-height) + 1rem) 0 0 0;
+    padding-left:calc(var(--nav-width) + 2rem);
+  }
+  .header{
+    height:calc(var(--header-height) + 1rem);
+    padding:0 2rem 0 calc(var(--nav-width) + 2rem);
+  }
+  .header__img{
+    width:40px;
+    height:40px;
+  }
+  .header__img img{
+    width:45px;
+  }
+  .l-navbar{
+    left:0;
+    padding:1rem 1rem 0 0;
+  }
+
+  .show{
+    width:calc(var(--nav-width) + 156px);
+  }
+
+  .body-pd{
+    padding-left:calc(var(--nav-width) + 188px);
+  }
+}
+
+/*======================================================DASHBOARD====================================================================*/
+
+
+.dash-stu{
+    width:auto;
+    height:400px;
+    background-color:#fff;
+    margin-left:-20px;
+    margin-top:80px;
+    box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.4);;
+    padding:20px;
+}
+.stu-image{
+    background-color:#dddd;
+    width:15%;
+    height:300px;
+    margin-top:30px;
+    
+    
+}
+.stu-name{
+    background-color:#dddd;
+    width:85%;
+    float:right;
+    margin-top:-300px;
+    height:300px;
+    
+}
+.dash-stu .stu-image img{
+width: 145px;
+padding:3px;
+margin-left:60px;
+margin-top:60px;
+border-radius: 50%;
+}
+.dash-stu .stu-name h2{
+    margin-top:80px;
+    margin-left:70px;
+    font-family:  'Georgia', serif;
+}
+
+@media screen and (max-width:703px){
+
+ .dash-stu .stu-name h2{
+    margin-top:80px;
+    margin-left:25%;
+    font-family:  'Georgia', serif;
+}
+.dash-stu .stu-image img{
+width: 145px;
+padding:3px;
+margin-left:30px;
+margin-top:60px;
+border-radius: 50%;
+}
+}
+@media screen and (max-width:1115px){
+
+ .dash-stu .stu-name h2{
+    margin-top:80px;
+    margin-left:20%;
+    font-family:  'Georgia', serif;
+}
+.dash-stu .stu-image img{
+width: 145px;
+padding:3px;
+margin-left:25px;
+margin-top:60px;
+border-radius: 50%;
+}
+}
+
+
+/*--------------------------------------------------Courses.php--------------------------------------------------------*/
+  
+  
+.teach_coursecard{
+    width: auto;
+    max-width: auto;
+    background-color: #f4f4f8;
+    padding: 40px;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+}
+.teach_course{
+    color: #B22B4F;
+   margin-left:35%;
+   font-size:40px;
+}
+.teach_coursecard .teach_content{
+    width: 100%;
+    margin-left: 0%;
+    text-align: center;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    border-radius: 12px 12px 0 0;
+  }
+  .teach_content tr{
+    width: 100%;
+    background-color: #fafafa;
+    padding: 0;
+  }
+  .teach_content tr:nth-child(even) {
+    width: 100%;
+    background-color: #ddd;
+    padding: 0;
+  }
+  .teach_content th {
+    padding: 10px ;
+    text-align: center;
+  }
+  
+  .teach_content  th{
+   background-color: #049EB3;
+   font-size:25px;
+   color: #fafafa;
+   border: none;
+   height: 50px;
+   width: 10%;
+   padding: 1px;
+    
+   }
+   .teach_content  td {
+     height: 50px;
+   }
+   .teach_coursecard .new {
+    padding: 10px;
+        font-size: 20px;
+        color:white;
+        background: green;
+        border: none;
+        border-radius: 5px;
+       
+        margin-top: 10px;
+   }
+   .course-C{
+    border:2px #000 solid;
+    margin-top:10%;
+    padding:20px;
+}
+.course-C h3{
+    color: #B22B4F;
+   margin-left:35%;
+   font-size:40px;
+}
+.course-C .cc{
+   border:1px transparent ;
+   height:auto;
+   padding:5px;
+   
+}
+.course-C .cc label{
+   font-size:20px;
+   font-weight:900;
+}
+.course-C .cc input{
+ width:100%;
+ height:50px;
+   
+}
+.conbtn{
+background-color: green;
+color:#fff;
+border: none;
+width:90px;
+height:50px;
+margin-left: 2%;
+margin-bottom: 10px;
+font-size: 1.2rem;
+cursor: pointer;
+}
+
+
+.edit_btn {
+text-decoration: none;
+padding:  10px;
+background: #009688;
+color: white;
+
+}
+.del_btn {
+text-decoration: none;
+padding:  10px;
+color: white;
+
+background: #a10a08;
+}
+
+/*==============================CHAT===============================*/
+.chat-area{
+    margin:10px;
+        
+        background-color:#4564;
+        width: auto;
+        height: auto;
+        border-radius: 16px;
+       
+  }
+      .chat-area header{
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+    cursor:pointer;
+  }
+  .chat-area header .back-icon{
+    color: #333;
+    font-size: 18px;
+  }
+  .chat-area header img{
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+  }
+  .chat-area header .details span{
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .hidden{
+    display:none;
+  }
+  .chat-box{
+   cursor:pointer;
+    position: relative;
+    min-height: 200px;
+    max-height: auto;
+    overflow-y: auto;
+    padding: 10px 30px 20px 30px;
+    background: #f7f7f7;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+                inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+  }
+  .chat-box .text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: calc(100% - 50px);
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  .chat-box .chat{
+    margin: 1px ;
+  }
+  .chat-box .chat p{
+    word-wrap: break-word;
+    padding: 8px 16px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                0rem 16px 16px -16px rgb(0 0 0 / 10%);
+  }
+  .chat-box .outgoing{
+    display: flex;
+  }
+  .chat-box .outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+  }
+  .outgoing .details p{
+    background: #333;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+  }
+  .chat-box .incoming{
+    display: flex;
+    align-items: flex-end;
+  }
+  .chat-box .incoming img{
+    height: 35px;
+    width: 35px;
+  }
+  .chat-box .incoming .details{
+    margin-right: auto;
+    margin-left: 10px;
+    max-width: calc(100% - 130px);
+  }
+  .incoming .details p{
+    background: #fff;
+    color: #333;
+    border-radius: 18px 18px 18px 0;
+  }
+  #message{
+   height: 45px;
+    width: 94%;
+   
+   
+   
+    outline: none;
+    
+  }
+  #myButton{
+   color: #fff;
+    width: 50px;
+    margin-top:0px;
+    height: 45px;
+    margin-left:0px;
+    margin-right:0px;
+    border: none;
+    outline: none;
+    background: green;
+    font-size:28px;
+    cursor: pointer;
+   
+   
+    
+  }
+  #myButton:hover{
+  background:green;
+  }
+
+
+
+
+
+
+  /*===========================================Attendance===========================*/
+ 
+  .teach_attendcard{
+    width: auto;
+    max-width: auto;
+    background-color: #f4f4f8;
+    padding: 40px;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+    }
+
+    .teach_attend{
+    color: #B22B4F;
+   margin-left:35%;
+   font-size:40px;
+}
+.teach_attendcard .teacher_attendtable{
+    width: 100%;
+    margin-left: 0%;
+    text-align: center;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    border-radius: 12px 12px 0 0;
+  }
+  .teacher_attendtable tr{
+    width: 100%;
+    background-color: #fafafa;
+    padding: 0;
+  }
+  .teacher_attendtable tr:nth-child(even) {
+    width: 100%;
+    background-color: #ddd;
+    padding: 0;
+  }
+  .teacher_attendtable th {
+    padding: 10px ;
+    text-align: center;
+  }
+  
+  .teacher_attendtable  th{
+   background-color: #049EB3;
+   font-size:25px;
+   color: #fafafa;
+   border: none;
+   height: 50px;
+   width: 10%;
+   padding: 1px;
+    
+   }
+   .teacher_attendtable  td {
+     height: 50px;
+   }
+.teach_attendcard .new {
+    padding: 10px;
+        font-size: 20px;
+        color:white;
+        background: green;
+        border: none;
+        border-radius: 5px;
+       
+        margin-top: 10px;
+   }
+   .form{
+   text-align: center;
+   width:auto;
+   background-color: rgb(237, 241, 238);
+   height:auto;
+   padding:10px;
+   border:#000 .5px solid; 
+  
+ }
+ .up{
+   border:1px solid #000;
+   padding:10px;
+  
+ }
+ .down {
+   border:1px solid #000;
+  padding:30px;
+}
+
+.down1 {
+    border-bottom:1px solid #000;
+    border-right:1px solid #000;
+    width:50%;
+    margin-top:0px;
+    font-size:20px;
+    
+}
+
+.down2 {
+    border-bottom:1px solid #000;
+    
+    width:50%;
+    margin-left:50%;
+    margin-top:-50.9px;
+}
+.down2 select{
+    outline: none;
+    width:40%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 20px;
+    height: 42px;
+    margin-bottom:8px;
+}
+ 
+ .down-n{
+  
+   width:50%;
+   height:60px;
+   border:1px solid #000;
+ }
+ .down-n img{
+    width:70px;
+    height:60px;
+    margin-left: -87%;
+ }
+ 
+ .down-s{
+    border: #000 1px solid;
+width:50%;
+height:60px;
+margin-top:-60px;
+
+margin-left:50%;
+padding: 8px;
+ }
+
+ .up label{
+   font-size:1.5rem;
+   margin-left:-60px;
+ }
+ input{
+   font-size:1rem;
+  
+ }
+ select{
+    margin-left: 40%;
+     height: 50px;
+     width:100px;
+   
+ }
+ .h1{
+   margin-left:40%;
+   color:#B22B4F;
+ }
+ .mark{
+    background-color: green;
+    color:#fff;
+    border: none;
+    width:90px;
+    height:50px;
+    margin-left: 0%;
+    margin-top: 10px;
+    
+    font-size: 1.2rem;
+    cursor: pointer;
+ }
+
+
+ 
+  
+ 
+
+/*=============================PROFILE=======================================*/
+
+ .f{
+
+    width: 500px;
+    height: auto;
+    background-color: #dbdbd5;
+    border: #999 1px solid;
+    border-radius: 7px;
+    margin: 90px  300px;
+  }
+  .f h3{
+  
+    margin-left: 170px;
+    font-size: 1.8rem;
+  }
+  .fc{
+    width: auto;
+    margin: 30px;
+    display: flex;
+    height:70px;
+    border: 1px solid #090a0a;
+    background-color: #868484;
+    border-radius: 5px;
+    justify-content: center;
+  }
+  .fc input[type=text]{ 
+    margin: 15px;
+    width: 60%;
+    height: 40px;
+    display: flex;
+    outline: none;
+  }
+  .fc input[type=password]{ 
+    margin: 15px;
+    width: 60%;
+    height: 40px;
+    display: flex;
+    outline: none;
+  }
+  .fc input[type=file]{ 
+    margin: 15px;
+    width: 60%;
+    height: 40px;
+    display: flex;
+    outline: none;
+  }
+  .probtn{
+    background-color: #009688;
+    border: none;
+    width:90px;
+    height:50px;
+    margin-left: 40%;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+
+  /*========================================COURSE-CONTENT=====================================*/
+
+
+  .course-C{
+    border:2px #000 solid;
+    margin-top:10%;
+}
+.course-C h3{
+   margin-left:40%;
+   font-size:1.5rem;
+}
+.course-C .cc{
+   border:1px transparent ;
+   height:auto;
+   padding:5px;
+   
+}
+.course-C .cc input{
+ width:100%;
+ height:50px;
+   
+}
+.conbtn{
+background-color: #009688;
+border: none;
+width:90px;
+height:50px;
+margin-left: 2%;
+margin-bottom: 10px;
+font-size: 1.2rem;
+cursor: pointer;
+}
+
+
+ /*========================================Time Table=====================================*/
+ .timet{
+    width: auto;
+max-width: auto;
+background-color: #f4f4f8;
+padding: 30px;
+box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+margin-top: 0%;
+margin-left: 1%;
+margin-bottom: 5%;
+}
+.time-content{
+  margin-top: 5%;
+margin-left:20%;
+}
+.teach_time{
+color: #B22B4F;
+margin-left:33%;
+font-size:40px;
+}
+
